@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import VanItem from './VanItem/VanItem';
 import { ButtonList, CardList, StyledContainer, Title } from './Vans.styled';
 
