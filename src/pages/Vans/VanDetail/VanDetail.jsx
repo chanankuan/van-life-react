@@ -42,6 +42,8 @@ const VanDetail = props => {
 
         <img src={imageUrl} alt={name} />
         <Tag bgColor={bgColor}>{type}</Tag>
+        <p>{description}</p>
+        <p>{price}</p>
       </StyledContainer>
     </>
   );
