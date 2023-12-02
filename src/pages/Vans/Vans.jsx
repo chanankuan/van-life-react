@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react';
 // import PropTypes from 'prop-types';
 import VanItem from './VanItem/VanItem';
-import { ButtonList, CardList, StyledContainer, Title } from './Vans.styled';
+import {
+  ButtonList,
+  CardList,
+  ClearButton,
+  FilterButton,
+  StyledContainer,
+  Title,
+} from './Vans.styled';
 
 const Vans = props => {
   const [vans, setVans] = useState([]);
@@ -17,16 +24,16 @@ const Vans = props => {
       <Title>Explore our van options</Title>
       <ButtonList>
         <li>
-          <button>Simple</button>
+          <FilterButton>Simple</FilterButton>
         </li>
         <li>
-          <button>Luxury</button>
+          <FilterButton>Luxury</FilterButton>
         </li>
         <li>
-          <button>Rugged</button>
+          <FilterButton>Rugged</FilterButton>
         </li>
         <li>
-          <button>Clear filters</button>
+          <ClearButton>Clear filters</ClearButton>
         </li>
       </ButtonList>
 

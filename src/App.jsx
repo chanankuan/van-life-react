@@ -6,6 +6,7 @@ import Layout from './components/Layout/Layout';
 import Dashboard from './pages/Host/Dashboard/Dashboard';
 import Income from './pages/Host/Income/Income';
 import Reviews from './pages/Host/Reviews/Reviews';
+import VanDetail from './pages/Vans/VanDetail/VanDetail';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/host/reviews" element={<Reviews />} />
           <Route path="/about" element={<About />} />
           <Route path="/vans" element={<Vans />} />
+          <Route path="/vans/:id" element={<VanDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>

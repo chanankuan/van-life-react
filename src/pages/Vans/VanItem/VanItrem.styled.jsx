@@ -51,19 +51,3 @@ export const Price = styled.p`
     font-weight: 500;
   }
 `;
-
-export const Type = styled.div`
-  color: #ffead0;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 200%;
-  text-transform: capitalize;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 40px;
-  background-color: ${props => props.bgColor};
-  border-radius: 5px;
-`;

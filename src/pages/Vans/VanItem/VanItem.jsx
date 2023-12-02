@@ -6,10 +6,11 @@ import {
   CardItem,
   CardTitle,
   Price,
-  Type,
 } from './VanItrem.styled';
+import { Link } from 'react-router-dom';
+import Tag from '../../../components/Tag';
 
-const VanItem = ({ imageUrl, name, price, type }) => {
+const VanItem = ({ id, imageUrl, name, price, type }) => {
   let bgColor;
 
   switch (type) {
@@ -28,16 +29,18 @@ const VanItem = ({ imageUrl, name, price, type }) => {
 
   return (
     <CardItem>
-      <CardImage src={imageUrl} alt={name} />
-      <CardInfo>
-        <CardTitle>{name}</CardTitle>
-        <Price>
-          ${price}
-          <br />
-          <span>/day</span>
-        </Price>
-      </CardInfo>
-      <Type bgColor={bgColor}>{type}</Type>
+      <Link to={id}>
+        <CardImage src={imageUrl} alt={name} />
+        <CardInfo>
+          <CardTitle>{name}</CardTitle>
+          <Price>
+            ${price}
+            <br />
+            <span>/day</span>
+          </Price>
+        </CardInfo>
+        <Tag bgColor={bgColor}>{type}</Tag>
+      </Link>
     </CardItem>
   );
 };
